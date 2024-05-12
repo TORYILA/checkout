@@ -204,6 +204,8 @@ button{
         font-weight: 600;
         margin-top: 10px;
     }
+    .inputsdiv, .inputsdiv2,.inputsdiv1,.cartsummary{
+        width:350px;
 }
 
 
