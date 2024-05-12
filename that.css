@@ -103,7 +103,7 @@
 
 .inputsdiv, .inputsdiv2,.inputsdiv1,.cartsummary {
             position: relative;
-            width: 50%;
+            width: 550px;
             max-width: 800px;
             margin: 0 auto;
             padding-bottom: 5vh;
@@ -131,7 +131,7 @@ input{
 }
 
 .inputsdiv div,.inputsdiv1 div,.inputsdiv2 div{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 button{
@@ -205,7 +205,11 @@ button{
         margin-top: 10px;
     }
     .inputsdiv, .inputsdiv2,.inputsdiv1,.cartsummary{
-        width:350px;
+        width:360px;
+}
+   .inputsdiv div,.inputsdiv1 div,.inputsdiv2 div{
+       width:80%;
+   } 
 }
 
 
