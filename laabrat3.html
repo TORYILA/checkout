@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Jersey+15+Charted&family=Jersey+25+Charted&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan+SC&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="that.css">
+</head>
+<body>
+   
+    <section class="step-wizard">
+        <ul class="step-wizard-list">
+            <li id="stepwizarditem1"  class="step-wizard-item current-item">
+                <span class="progress-count">1</span>
+                <span class="progress-label">Billing info</span>
+            </li>
+            <li id="stepwizarditem2" class="step-wizard-item current-item2">
+                <span class="progress-count">2</span>
+                <span class="progress-label">Payment method</span>
+            </li>
+            <li id="stepwizarditem3" class="step-wizard-item current-item3">
+                <span class="progress-count">3</span>
+                <span class="progress-label">Checkout</span>
+            </li>
+            <li id="stepwizarditem4" class="step-wizard-item current-item4">
+                <span class="progress-count">4</span>
+                <span class="progress-label">Success</span>
+            </li>
+        </ul>
+    </section>
+    <div class="maindiv">
+        <div class="inputsdiv">
+            <div>
+                <p>COUNTRY</p>
+                <input placeholder="Enter country" class="input1" type="text">
+            </div>
+            <div>
+                <p>STATE</p>
+                <input placeholder="Enter state" class="input2" type="text">
+            </div>
+            <div>
+                <p>CITY</p> 
+                <input placeholder="Enter city" class="input3"  type="text">
+            </div>
+            <div>
+                <p>POSTCODE</p>
+                <input placeholder="Enter post-code" class="input4" type="text">
+            </div>
+            <div>
+                <p>ADDRESS</p>
+                <input placeholder="Enter delivery address" class="input5" type="text">
+            </div>
+            <button onclick="switchPages()">Continue</button>
+        </div>    
+    </div>
+
+    <div class="maindiv2" style="display: none;">
+        <div class="inputsdiv1">
+                <p class="s1">SELECT YOUR PAYMENT METHOD</p>
+                
+                <img class="image" src="card.png" alt="">
+                <img onclick="switchtoPaypal()" class="imager" src="paypal.png" alt="">
+                <p class="s2">Mastercard</p>
+            <div>
+                <p>Card Number</p>
+                <input placeholder="0000-0000-0000-0000-0000" class="input1" type="text">
+            </div>
+            <div>
+                <p>Expiry date</p>         
+                <input placeholder="00/00" class="input3"  type="text">
+            </div>
+            <div>
+                <p>CVV</p>
+                <input placeholder="***" class="input4" type="text">
+            </div>
+            <div>
+                <p>Name on card</p>
+                <input placeholder="Enter card name" class="input2" type="text">
+            </div>
+            
+            <button onclick="switchPagess()">Continue</button>
+        </div>
+        
+        <div class="inputsdiv2">
+            <p class="s1">SELECT YOUR PAYMENT METHOD</p>
+            <img class="image" src="paypal.png" alt="">
+            <img onclick="switchtoMastercard()" class="imager" src="card.png" alt="">
+            
+            <p class="s22">Paypal</p>
+        <div>
+            <p>Paypal id</p>
+            <input placeholder="paypal id" type="text">
+        </div>
+        
+        <button onclick="switchPagess()">Continue</button>
+    </div>    
+      </div>
+        
+
+      <div class="maindiv3" style="display: none;">
+      <div class="cartsummary">
+        <div class="firstprod">
+            <div>
+                <img src="macbook.jpg" alt="">
+                <P>Macbook pro</P>
+            </div>
+            <div>
+                $800
+            </div>
+       </div>
+       <div class="firstprod">
+            <div>
+                <img src="apple-iphone-x-new-1.jpg" alt="">
+                <P>Brand new iphone x</P>
+            </div>
+            <div>
+                $300
+            </div>
+       </div>
+       <div class="firstprod">
+            <div>
+                <img src="iphone-12 blue.jpg" alt="">
+                <P>Brand new iphone 12</P>
+            </div>
+            <div>
+                $450
+            </div>
+       </div>
+       <div class="line"></div>
+       <div class="shippingfee">
+            <span>shipping fee</span>
+            <span>$10</span>
+       </div>
+       <div class="line"></div>
+       <div class="Total">
+            <span>Total</span>
+            <span>$1560</span>
+       </div>
+       <button class="checkout" onclick="switchPagesss()">Checkout</button>
+     </div> 
+    </div>   
+      
+
+    <div class="maindiv4" style="display: none;">
+        <div class="payprogress">
+           <div>
+            Your Payment has been completed and your order is validated
+           </div>
+           <div>
+            <p>09892368571268</p>
+            <p>Here is your order number, you can use it to track your order</p>
+           </div>
+           <button class="checkout" onclick="switchPagessss()">Continue Shopping</button>
+        </div> 
+       </div>   
+          
+    <script src="this.js">
+       
+    </script>
+</body>
+</html>
